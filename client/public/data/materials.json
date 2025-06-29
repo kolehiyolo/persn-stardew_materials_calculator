@@ -1,11 +1,11 @@
 [
-  {"id": 1,"name": "Wood","imgURL": ""},
-  {"id": 2,"name": "Stone","imgURL": ""},
-  {"id": 3,"name": "Coal","imgURL": ""},
-  {"id": 4,"name": "Copper Bar","imgURL": ""},
-  {"id": 5,"name": "Iron Bar","imgURL": ""},
-  {"id": 6,"name": "Gold Bar","imgURL": ""},
-  {"id": 7,"name": "Refined Quartz","imgURL": ""},
-  {"id": 8,"name": "Earth Crystal","imgURL": ""},
-  {"id": 9,"name": "Maple Syrup","imgURL": ""}
+  {"id": 1,"name": "Wood","imgURL": "24px-Wood"},
+  {"id": 2,"name": "Stone","imgURL": "24px-Wood"},
+  {"id": 3,"name": "Coal","imgURL": "24px-Wood"},
+  {"id": 4,"name": "Copper Bar","imgURL": "24px-Wood"},
+  {"id": 5,"name": "Iron Bar","imgURL": "24px-Wood"},
+  {"id": 6,"name": "Gold Bar","imgURL": "24px-Wood"},
+  {"id": 7,"name": "Refined Quartz","imgURL": "24px-Wood"},
+  {"id": 8,"name": "Earth Crystal","imgURL": "24px-Wood"},
+  {"id": 9,"name": "Maple Syrup","imgURL": "24px-Wood"}
 ]

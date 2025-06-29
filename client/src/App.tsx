@@ -71,10 +71,11 @@ export default function App() {
                       <td
                         className="Item"
                       >
-                        <div
+                        <img
                           className="image"
-                        >
-                        </div>
+                          src={"/images/materials/"+item.imgURL+".png"}
+                          alt={item.name} 
+                        />
                         <div
                           className="name"
                         >
@@ -90,10 +91,11 @@ export default function App() {
                               key={idx}
                               className='Ingredient'
                             >
-                              <div
+                              <img
                                 className="image"
-                              >
-                              </div>
+                                src={"/images/materials/"+item.imgURL+".png"}
+                                alt={item.name} 
+                              />
                               <div
                                 className="name"
                               >

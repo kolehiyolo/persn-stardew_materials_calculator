@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Quality Sprinkler",
-    "imgURL": "",
+    "imgURL": "24px-Wood",
     "ingredients": [
       {
         "material": "Iron Bar",
@@ -21,7 +21,7 @@
   {
     "id": 2,
     "name": "Mayonnaise Machine",
-    "imgURL": "",
+    "imgURL": "24px-Wood",
     "ingredients": [
       {
         "material": "Wood",
@@ -44,7 +44,7 @@
   {
     "id": 3,
     "name": "Bee House",
-    "imgURL": "",
+    "imgURL": "24px-Wood",
     "ingredients": [
       {
         "material": "Wood",
@@ -67,7 +67,7 @@
   {
     "id": 4,
     "name": "Preserves Jar",
-    "imgURL": "",
+    "imgURL": "24px-Wood",
     "ingredients": [
       {
         "material": "Wood",
