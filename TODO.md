@@ -9,9 +9,9 @@ refactor App.tsx data fetch
 own component CraftingTable 
 own component ItemBullet
 break down components
+ItemBullet image stretched
 
 <!-- ? DOING -->
-ItemBullet image stretched
 
 <!-- ! PAUSED -->
 
