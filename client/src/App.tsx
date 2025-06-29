@@ -30,8 +30,11 @@ export default function App() {
           ...item,
           ingredients: item.ingredients.map((ingredient: Ingredient) => {
             const matchedMaterial = materialData.find(
-              (mat: Material) => mat.name === ingredient.name
+              (mat: Material) => {
+                return mat.name === ingredient.name;
+              }
             );
+            console.log(matchedMaterial);
             return {
               material: matchedMaterial || { id: '', name: ingredient.material, imgURL: '' },
               quantity: ingredient.quantity
@@ -73,7 +76,7 @@ export default function App() {
                       >
                         <img
                           className="image"
-                          src={"/images/materials/"+item.imgURL+".png"}
+                          src={"/images/items/"+item.imgURL+".png"}
                           alt={item.name} 
                         />
                         <div
@@ -93,8 +96,8 @@ export default function App() {
                             >
                               <img
                                 className="image"
-                                src={"/images/materials/"+item.imgURL+".png"}
-                                alt={item.name} 
+                                src={"/images/materials/"+ing.material.imgURL+".png"}
+                                alt={ing.material.imgURL} 
                               />
                               <div
                                 className="name"

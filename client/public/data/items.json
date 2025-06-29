@@ -2,18 +2,18 @@
   {
     "id": 1,
     "name": "Quality Sprinkler",
-    "imgURL": "24px-Wood",
+    "imgURL": "Quality_Sprinkler",
     "ingredients": [
       {
-        "material": "Iron Bar",
+        "name": "Iron Bar",
         "quantity": 1
       },
       {
-        "material": "Gold Bar",
+        "name": "Gold Bar",
         "quantity": 1
       },
       {
-        "material": "Refined Quartz",
+        "name": "Refined Quartz",
         "quantity": 1
       }
     ]
@@ -21,22 +21,22 @@
   {
     "id": 2,
     "name": "Mayonnaise Machine",
-    "imgURL": "24px-Wood",
+    "imgURL": "Mayonnaise_Machine",
     "ingredients": [
       {
-        "material": "Wood",
+        "name": "Wood",
         "quantity": 15
       },
       {
-        "material": "Stone",
+        "name": "Stone",
         "quantity": 15
       },
       {
-        "material": "Copper Bar",
+        "name": "Copper Bar",
         "quantity": 1
       },
       {
-        "material": "Earth Crystal",
+        "name": "Earth Crystal",
         "quantity": 1
       }
     ]
@@ -44,22 +44,22 @@
   {
     "id": 3,
     "name": "Bee House",
-    "imgURL": "24px-Wood",
+    "imgURL": "Bee_House",
     "ingredients": [
       {
-        "material": "Wood",
+        "name": "Wood",
         "quantity": 40
       },
       {
-        "material": "Iron Bar",
+        "name": "Iron Bar",
         "quantity": 1
       },
       {
-        "material": "Coal",
+        "name": "Coal",
         "quantity": 8
       },
       {
-        "material": "Maple Syrup",
+        "name": "Maple Syrup",
         "quantity": 1
       }
     ]
@@ -67,18 +67,18 @@
   {
     "id": 4,
     "name": "Preserves Jar",
-    "imgURL": "24px-Wood",
+    "imgURL": "Preserves_Jar",
     "ingredients": [
       {
-        "material": "Wood",
+        "name": "Wood",
         "quantity": 50
       },
       {
-        "material": "Stone",
+        "name": "Stone",
         "quantity": 40
       },
       {
-        "material": "Coal",
+        "name": "Coal",
         "quantity": 8
       }
     ]
