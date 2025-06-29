@@ -1,0 +1,102 @@
+@import '../../styles/utils/variables';
+
+.CraftingTable {
+  background-color: $bg-grey;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex-grow: 1;
+
+  .head {
+    height: 100px;
+    padding: 20px;
+  }
+
+  .body {
+    padding: 20px;
+    flex-grow: 1;
+
+    table {
+      border-collapse: separate; // Important!
+      border-spacing: 12px; // Space between cells
+      margin: -12px;
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 150px;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 100%;
+      }
+
+      th,
+      td {
+        background-color: $bg-black;
+      }
+
+      thead {
+        tr {
+          th {
+            padding: 20px;
+          }
+        }
+      }
+
+      tbody {
+        .recipe {
+          .Item {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+
+            .image {
+              width: 30px;
+              height: 30px;
+              flex-shrink: 0;
+            }
+
+            .name {
+
+            }
+          }
+
+          .ingredients {
+            ul {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: 0px 10px;
+              padding: 0px 20px;
+              
+              .Ingredient {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                padding: 10px;
+
+                .image {
+                  width: 30px;
+                  height: 30px;
+                  flex-shrink: 0;
+                }
+                
+                .name {
+
+                }
+
+                .quantity {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
