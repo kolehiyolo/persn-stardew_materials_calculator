@@ -4,15 +4,14 @@ build the initial table with placeholder data
 style table
 render placeholder images
 populate data with proper images
-
-<!-- ? DOING -->
 <!-- display items & ingredients on list -->
 
-<!-- ! PAUSED -->
+<!-- ? DOING -->
+refactor App.tsx data fetch
 
+<!-- ! PAUSED -->
 
 <!-- TODOS -->
 
 <!-- ? SANITY REFACTORING -->
-refactor App.tsx data fetch
 break down components
