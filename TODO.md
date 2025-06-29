@@ -7,6 +7,7 @@ populate data with proper images
 <!-- display items & ingredients on list -->
 refactor App.tsx data fetch
 own component CraftingTable 
+own component ItemBullet
 
 <!-- ? DOING -->
 break down components
@@ -14,5 +15,8 @@ break down components
 <!-- ! PAUSED -->
 
 <!-- TODOS -->
+
+<!-- ! BUGS -->
+ItemBullet image stretched
 
 <!-- ? SANITY REFACTORING -->

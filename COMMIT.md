@@ -1,3 +1,3 @@
-own component CraftingTable 
-1. CraftingTable has now been moved to its own component
-2. all of the work to make it so easy has been done before, so it was just a matter of copy-pasting and making the necessary import+export
+own component ItemBullet
+1. the most repeatable component in the system so far is the combination of the item's name and icon
+2. it is now its own component, ready for use, accepting just the name of the item, the imgURL, and the category of the item so src knows which folder to look the image at

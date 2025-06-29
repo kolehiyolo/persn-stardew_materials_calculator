@@ -47,21 +47,7 @@
       tbody {
         .recipe {
           .Item {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            align-items: center;
             padding: 10px;
-
-            .image {
-              width: 30px;
-              height: 30px;
-              flex-shrink: 0;
-            }
-
-            .name {
-
-            }
           }
 
           .ingredients {

@@ -2,6 +2,7 @@
 // import { useState } from 'react';
 
 // * Other Components
+import ItemBullet from '../containers/ItemBullet.component';
 
 // * Other Imports
 import type { Item } from '../../types';
@@ -43,16 +44,11 @@ export default function CraftingTable({
                 <td
                   className="Item"
                 >
-                  <img
-                    className="image"
-                    src={"/images/items/"+item.imgURL+".png"}
-                    alt={item.name} 
+                  <ItemBullet
+                    name={item.name}
+                    imgURL={item.imgURL}
+                    category="items"
                   />
-                  <div
-                    className="name"
-                  >
-                    {item.name}
-                  </div>
                 </td>
                 <td
                   className="ingredients"
@@ -63,16 +59,11 @@ export default function CraftingTable({
                         key={idx}
                         className='Ingredient'
                       >
-                        <img
-                          className="image"
-                          src={"/images/materials/"+ing.material.imgURL+".png"}
-                          alt={ing.material.imgURL} 
+                        <ItemBullet
+                          name={ing.material.name}
+                          imgURL={ing.material.imgURL}
+                          category="materials"
                         />
-                        <div
-                          className="name"
-                        >
-                          {ing.material.name}
-                        </div>
                         <div
                           className="quantity"
                         >
