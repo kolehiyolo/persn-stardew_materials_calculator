@@ -8,15 +8,15 @@ populate data with proper images
 refactor App.tsx data fetch
 own component CraftingTable 
 own component ItemBullet
+break down components
 
 <!-- ? DOING -->
-break down components
+ItemBullet image stretched
 
 <!-- ! PAUSED -->
 
 <!-- TODOS -->
 
 <!-- ! BUGS -->
-ItemBullet image stretched
 
 <!-- ? SANITY REFACTORING -->
