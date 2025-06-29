@@ -1,11 +1,19 @@
 <!-- # DONE -->
+need to do try changing App.jsx to tsx
+build the initial table with placeholder data
 
 <!-- ? DOING -->
-need to do try changing App.jsx to tsx
+<!-- display items & ingredients on list -->
+style table
 
 <!-- ! PAUSED -->
-<!-- display items & ingredients on list -->
-build the initial table with placeholder data
 
 
 <!-- TODOS -->
+<!-- display items & ingredients on list -->
+render placeholder images
+populate data with proper images
+
+<!-- ? SANITY REFACTORING -->
+refactor App.tsx data fetch
+break down components

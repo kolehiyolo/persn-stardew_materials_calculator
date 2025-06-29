@@ -1,0 +1,11 @@
+[
+  {"id": 1,"name": "Wood","imgURL": ""},
+  {"id": 2,"name": "Stone","imgURL": ""},
+  {"id": 3,"name": "Coal","imgURL": ""},
+  {"id": 4,"name": "Copper Bar","imgURL": ""},
+  {"id": 5,"name": "Iron Bar","imgURL": ""},
+  {"id": 6,"name": "Gold Bar","imgURL": ""},
+  {"id": 7,"name": "Refined Quartz","imgURL": ""},
+  {"id": 8,"name": "Earth Crystal","imgURL": ""},
+  {"id": 9,"name": "Maple Syrup","imgURL": ""}
+]

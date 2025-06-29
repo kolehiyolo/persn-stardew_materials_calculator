@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Quality Sprinkler",
+    "imgURL": "",
+    "ingredients": [
+      {
+        "material": "Iron Bar",
+        "quantity": 1
+      },
+      {
+        "material": "Gold Bar",
+        "quantity": 1
+      },
+      {
+        "material": "Refined Quartz",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mayonnaise Machine",
+    "imgURL": "",
+    "ingredients": [
+      {
+        "material": "Wood",
+        "quantity": 15
+      },
+      {
+        "material": "Stone",
+        "quantity": 15
+      },
+      {
+        "material": "Copper Bar",
+        "quantity": 1
+      },
+      {
+        "material": "Earth Crystal",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bee House",
+    "imgURL": "",
+    "ingredients": [
+      {
+        "material": "Wood",
+        "quantity": 40
+      },
+      {
+        "material": "Iron Bar",
+        "quantity": 1
+      },
+      {
+        "material": "Coal",
+        "quantity": 8
+      },
+      {
+        "material": "Maple Syrup",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Preserves Jar",
+    "imgURL": "",
+    "ingredients": [
+      {
+        "material": "Wood",
+        "quantity": 50
+      },
+      {
+        "material": "Stone",
+        "quantity": 40
+      },
+      {
+        "material": "Coal",
+        "quantity": 8
+      }
+    ]
+  }
+]
