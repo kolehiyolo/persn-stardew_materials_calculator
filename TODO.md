@@ -5,13 +5,13 @@ style table
 render placeholder images
 populate data with proper images
 <!-- display items & ingredients on list -->
+refactor App.tsx data fetch
 
 <!-- ? DOING -->
-refactor App.tsx data fetch
+break down components
 
 <!-- ! PAUSED -->
 
 <!-- TODOS -->
 
 <!-- ? SANITY REFACTORING -->
-break down components

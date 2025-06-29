@@ -12,43 +12,68 @@ import './styles/App.scss';
 
 // * Component
 export default function App() {
+  // # States
+  // * Constant On Mount
   // ! const [materials, setMaterials] = useState<Material[]>([]);
-  const [items, setItems] = useState<Item[]>([]);
+  const [constItems, setConstItems] = useState<Item[]>([]);
 
+  // # triggerOnMount
   useEffect(() => {
     // Load both JSON files in parallel
     Promise.all([
       fetch('/data/materials.json').then(res => res.json()),
       fetch('/data/items.json').then(res => res.json())
     ])
-      .then(([materialData, itemDataRaw]) => {
+      .then(([fetchedMaterialsData, fetchedItemsData]: [Material[], Item[]]) => {
         // ! Store material list
         // ! setMaterials(materialData);
 
-        // Convert item material names to full Material objects
-        const itemData: Item[] = itemDataRaw.map((item: Item) => ({
-          ...item,
-          ingredients: item.ingredients.map((ingredient: Ingredient) => {
-            const matchedMaterial = materialData.find(
-              (mat: Material) => {
-                return mat.name === ingredient.name;
+        // Loop through all items to convert item.ingredients[].names to full Material objects
+        const itemsData: Item[] = fetchedItemsData.map(
+          (item: Item) => {
+            // Loop through each ingredient to find the matching fetchedMaterialsData[] item
+            const prcsdIngredients: Ingredient[] = item.ingredients.map(
+              (ingredient: Ingredient) => {
+                // Find match, and set it to "Material Not Found" if no match
+                const matchedMaterial: Material = fetchedMaterialsData.find(
+                  (mat: Material) => {
+                    return mat.name === ingredient.name;
+                  }
+                ) || {
+                  id: '',
+                  name: 'Material Not Found',
+                  imgURL: 'Material Not Found',
+                };
+
+                // Set item.ingredients[n] with right .material
+                // Set it to "Material Not Found" if no match is found
+                return {
+                  name: ingredient.name,
+                  material: matchedMaterial,
+                  quantity: ingredient.quantity
+                };
               }
             );
-            console.log(matchedMaterial);
-            return {
-              material: matchedMaterial || { id: '', name: ingredient.material, imgURL: '' },
-              quantity: ingredient.quantity
-            };
-          })
-        }));
 
-        setItems(itemData);
+            // Finalize each itemData
+            const itemData: Item = {
+              ...item,
+              ingredients: prcsdIngredients
+            }
+
+            return itemData;
+          }
+        );
+
+        // Set collected itemsData to state
+        setConstItems(itemsData);
       })
       .catch(err => {
         console.error('Failed to load mock data:', err);
       });
   }, []);
 
+  // # Rendering
   return (
     <div className="App">
       <main className="main">
@@ -66,7 +91,7 @@ export default function App() {
                   </tr>
                 </thead>
                 <tbody>
-                  {items.map(item => (
+                  {constItems.map(item => (
                     <tr 
                       className="recipe"
                       key={item.id}
