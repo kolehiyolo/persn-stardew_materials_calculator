@@ -1,4 +1,4 @@
-build the initial table with placeholder data
-1. yey with some GPT help I managed this
-2. I also needed to make a new type Ingredient, which is basically material + quantity
-3. for now it's working, but I am planning on refactoring this later and splitting components
+style table
+1. oof that was a lot of refactoring the actual JSX and the SCSS
+2. the groundwork has now been paved for splitting the components and for adding images
+3. next is just actually rendering placeholder images

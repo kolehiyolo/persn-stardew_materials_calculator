@@ -14,63 +14,134 @@
   color: $text-white;
 }
 
+#root {
+  width: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
-  background-color: $bg-primary;
-  scrollbar-gutter: stable both-edges;
+  height: 100vh;
+  background-color: $bg-black;
   
   .main {
-    background-color: $bg-primary;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    padding: 25px;
+    padding: 100px;
     gap: 25px;
     flex-grow: 1;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      flex-grow: 1;
+
+      .CraftingTable {
+        background-color: $bg-grey;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        flex-grow: 1;
+
+        .head {
+          height: 100px;
+          padding: 20px;
+        }
+
+        .body {
+          padding: 20px;
+          flex-grow: 1;
+
+          table {
+            border-collapse: separate; // Important!
+            border-spacing: 12px; // Space between cells
+            margin: -12px;
+
+            th:nth-child(1),
+            td:nth-child(1) {
+              width: 150px;
+            }
+
+            th:nth-child(2),
+            td:nth-child(2) {
+              width: 100%;
+            }
+
+            th,
+            td {
+              background-color: $bg-black;
+            }
+
+            thead {
+              tr {
+                th {
+                  padding: 20px;
+                }
+              }
+            }
+
+            tbody {
+              .recipe {
+                .Item {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 10px;
+                  align-items: center;
+                  padding: 10px;
+
+                  .image {
+                    background-color: $bg-img;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100px;
+                    flex-shrink: 0;
+                  }
+
+                  .name {
+
+                  }
+                }
+
+                .ingredients {
+                  ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 0px 10px;
+                    padding: 0px 20px;
+                    
+                    .Ingredient {
+                      display: flex;
+                      flex-direction: row;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 10px;
+
+                      .image {
+                        background-color: $bg-img;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100px;
+                        flex-shrink: 0;
+                      }
+                      
+                      .name {
+
+                      }
+
+                      .quantity {
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

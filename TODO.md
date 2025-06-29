@@ -1,17 +1,17 @@
 <!-- # DONE -->
 need to do try changing App.jsx to tsx
 build the initial table with placeholder data
+style table
 
 <!-- ? DOING -->
 <!-- display items & ingredients on list -->
-style table
+render placeholder images
 
 <!-- ! PAUSED -->
 
 
 <!-- TODOS -->
 <!-- display items & ingredients on list -->
-render placeholder images
 populate data with proper images
 
 <!-- ? SANITY REFACTORING -->

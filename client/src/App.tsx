@@ -47,32 +47,75 @@ export default function App() {
   }, []);
 
   return (
-    <div className="app">
-      <h1>Craftable Items</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Ingredients</th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map(item => (
-            <tr key={item.id}>
-              <td>{item.name}</td>
-              <td>
-                <ul>
-                  {item.ingredients.map((ing, idx) => (
-                    <li key={idx}>
-                      {ing.quantity}x {ing.material.name}
-                    </li>
+    <div className="App">
+      <main className="main">
+        <div className="left">
+          <div className="CraftingTable">
+            <div className="head">
+              <h1 className="Title">What do you want to craft?</h1>
+            </div>
+            <div className="body">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Ingredients</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {items.map(item => (
+                    <tr 
+                      className="recipe"
+                      key={item.id}
+                    >
+                      <td
+                        className="Item"
+                      >
+                        <div
+                          className="image"
+                        >
+                        </div>
+                        <div
+                          className="name"
+                        >
+                          {item.name}
+                        </div>
+                      </td>
+                      <td
+                        className="ingredients"
+                      >
+                        <ul>
+                          {item.ingredients.map((ing, idx) => (
+                            <li
+                              key={idx}
+                              className='Ingredient'
+                            >
+                              <div
+                                className="image"
+                              >
+                              </div>
+                              <div
+                                className="name"
+                              >
+                                {ing.material.name}
+                              </div>
+                              <div
+                                className="quantity"
+                              >
+                                x{ing.quantity}
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </td>
+                    </tr>
                   ))}
-                </ul>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+                </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
