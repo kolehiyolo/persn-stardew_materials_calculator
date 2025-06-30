@@ -17,8 +17,9 @@ style input
 add material multiplier within RecipeRow
 prep state prcsdItems
 handle input change with RecipeRow
-renamed CraftingTable to TableCrafting
 <!-- user can input quantity to items -->
+renamed CraftingTable to TableCrafting
+renamed RecipeRow to RowRecipe
 
 <!-- ? DOING -->
 rename components to TypeName, instead of NameType

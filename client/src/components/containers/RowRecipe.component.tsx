@@ -3,35 +3,35 @@
 import type { ChangeEvent } from 'react';
 
 // * Other Components
-import ItemBullet from '../containers/ItemBullet.component';
+import ItemBullet from './ItemBullet.component';
 
 // * Other Imports
 import type { Item } from '../../types';
-import './RecipeRow.component.scss';
+import './RowRecipe.component.scss';
 
 // * Component Props
-interface RecipeRowProps {
+interface RowRecipeProps {
   item: Item,
-  handleRecipeRowInputChange: (itemID: string, itemQuantity: number) => void 
+  handleRowRecipeInputChange: (itemID: string, itemQuantity: number) => void 
 };
 
 // * Component
-export default function RecipeRow({ 
+export default function RowRecipe({ 
   item,
-  handleRecipeRowInputChange
-}: RecipeRowProps) {
+  handleRowRecipeInputChange
+}: RowRecipeProps) {
   // * Variables
   
   // * Helper Functions
   function handleInputChange(e: ChangeEvent<HTMLInputElement>): void {
     const value: number = Number(e.target.value);
-    handleRecipeRowInputChange(item.id, value);
+    handleRowRecipeInputChange(item.id, value);
   };
 
   // * Rendering
   return (
     <tr 
-      className="RecipeRow"
+      className="RowRecipe"
     >
       <td
         className="Item"

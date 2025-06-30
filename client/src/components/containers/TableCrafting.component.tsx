@@ -2,7 +2,7 @@
 // import { useState } from 'react';
 
 // * Other Components
-import RecipeRow from './RecipeRow.component';
+import RowRecipe from './RowRecipe.component';
 
 // * Other Imports
 import type { Item } from '../../types';
@@ -22,7 +22,7 @@ export default function TableCrafting({
   // * Variables
 
   // * Helper Functions
-  function handleRecipeRowInputChange(itemID: string, itemQuantity: number): void {
+  function handleRowRecipeInputChange(itemID: string, itemQuantity: number): void {
     const newPrcsdItems: Item[] = prcsdItems.map(item => {
       if (item.id === itemID) {
         return { ...item, quantity: itemQuantity };
@@ -50,10 +50,10 @@ export default function TableCrafting({
           </thead>
           <tbody>
             {prcsdItems.map(item => (
-              <RecipeRow
+              <RowRecipe
                 key={item.id}
                 item={item}
-                handleRecipeRowInputChange={handleRecipeRowInputChange}
+                handleRowRecipeInputChange={handleRowRecipeInputChange}
               />
             ))}
           </tbody>
