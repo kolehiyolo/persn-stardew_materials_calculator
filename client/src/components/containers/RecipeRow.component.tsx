@@ -1,5 +1,6 @@
 // * Dependencies
-// import { useState } from 'react';
+import { useState } from 'react';
+import type { ChangeEvent } from 'react';
 
 // * Other Components
 import ItemBullet from '../containers/ItemBullet.component';
@@ -18,8 +19,14 @@ export default function RecipeRow({
   item
 }: RecipeRowProps) {
   // * Variables
-
+  const [recipeQuantity, setRecipeQuantity] = useState<number>(0);
+  
   // * Helper Functions
+  function handleInputChange(e: ChangeEvent<HTMLInputElement>): void {
+    const value: number = Number(e.target.value);
+    console.log(`${item.name} = ${value}`)
+    setRecipeQuantity(value);
+  };
 
   // * Rendering
   return (
@@ -57,6 +64,17 @@ export default function RecipeRow({
             </li>
           ))}
         </ul>
+      </td>
+      <td
+        className="quantity"
+      >
+        <input
+          type="number"
+          onChange={handleInputChange}
+          min={0}
+          step={1}
+          value={recipeQuantity}
+        />
       </td>
     </tr>
   );
