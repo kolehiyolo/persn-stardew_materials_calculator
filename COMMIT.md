@@ -1,4 +1,3 @@
-style input
-1. done
-2. ran into an issue tho where i want the input to fill in the space of its parent, but right now it's good enough and i need to not be too hung up on such little things
-  3. i added it to FEATURE-CREEP.md as a bonus
+add material multiplier within RecipeRow
+1. JUST LIKE THAT this is done lol
+2. didn't expect it to be so smooth but there ya go, just added one new element in JSX, and styled it with one line

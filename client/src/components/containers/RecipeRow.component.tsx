@@ -61,6 +61,11 @@ export default function RecipeRow({
               >
                 x{ing.quantity}
               </div>
+              <div
+                className="quantityTotal"
+              >
+                x{ing.quantity * recipeQuantity}
+              </div>
             </li>
           ))}
         </ul>
