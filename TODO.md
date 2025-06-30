@@ -17,6 +17,7 @@ style input
 add material multiplier within RecipeRow
 prep state prcsdItems
 handle input change with RecipeRow
+renamed CraftingTable to TableCrafting
 <!-- user can input quantity to items -->
 
 <!-- ? DOING -->

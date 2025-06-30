@@ -2,23 +2,23 @@
 // import { useState } from 'react';
 
 // * Other Components
-import RecipeRow from '../containers/RecipeRow.component';
+import RecipeRow from './RecipeRow.component';
 
 // * Other Imports
 import type { Item } from '../../types';
-import './CraftingTable.component.scss';
+import './TableCrafting.component.scss';
 
 // * Component Props
-interface CraftingTableProps {
+interface TableCraftingProps {
   prcsdItems: Item[],
   setPrcsdItems: React.Dispatch<React.SetStateAction<Item[]>>,
 };
 
 // * Component
-export default function CraftingTable({ 
+export default function TableCrafting({ 
   prcsdItems,
   setPrcsdItems,
-}: CraftingTableProps) {
+}: TableCraftingProps) {
   // * Variables
 
   // * Helper Functions
@@ -35,7 +35,7 @@ export default function CraftingTable({
 
   // * Rendering
   return (
-    <div className="CraftingTable">
+    <div className="TableCrafting">
       <div className="head">
         <h1 className="Title">What do you want to craft?</h1>
       </div>

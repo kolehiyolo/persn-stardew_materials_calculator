@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 // * Other Components
-import CraftingTable from './components/containers/CraftingTable.component';
+import TableCrafting from './components/containers/TableCrafting.component';
 
 // * Other Imports
 import type { Material } from './types';
@@ -92,7 +92,7 @@ export default function App() {
     <div className="App">
       <main className="main">
         <div className="left">
-          <CraftingTable
+          <TableCrafting
             prcsdItems={prcsdItems}
             setPrcsdItems={setPrcsdItems}
           />
