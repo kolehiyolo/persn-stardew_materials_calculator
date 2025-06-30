@@ -12,3 +12,4 @@
 
 <!-- @ BONUS -->
 <!-- turn into .exe -->
+<!-- .RecipeRow > td.quantity > input  should fill in the space of its parent -->

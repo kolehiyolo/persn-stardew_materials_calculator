@@ -31,6 +31,11 @@
         width: 100%;
       }
 
+      th:nth-child(3),
+      td:nth-child(3) {
+        width: 75px;
+      }
+
       th,
       td {
         background-color: $bg-black;
