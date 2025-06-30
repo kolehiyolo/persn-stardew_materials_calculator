@@ -33,6 +33,7 @@ export default function CraftingTable({
             <tr>
               <th>Item</th>
               <th>Ingredients</th>
+              <th>Quantity</th>
             </tr>
           </thead>
           <tbody>

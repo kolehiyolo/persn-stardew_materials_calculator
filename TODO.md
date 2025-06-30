@@ -11,11 +11,11 @@ own component ItemBullet
 break down components
 ItemBullet image stretched
 own component RecipeRow
+add input to RecipeRow
+add quantity header to table
 
 <!-- ? DOING -->
 <!-- user can input quantity to items -->
-add input to RecipeRow
-add quantity header to table
 style input
 add material multiplier within RecipeRow
 prep state prcsdItems
