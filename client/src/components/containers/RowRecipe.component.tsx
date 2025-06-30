@@ -3,7 +3,7 @@
 import type { ChangeEvent } from 'react';
 
 // * Other Components
-import ItemBullet from './ItemBullet.component';
+import BulletItem from './BulletItem.component';
 
 // * Other Imports
 import type { Item } from '../../types';
@@ -36,7 +36,7 @@ export default function RowRecipe({
       <td
         className="Item"
       >
-        <ItemBullet
+        <BulletItem
           name={item.name}
           imgURL={item.imgURL}
           category="items"
@@ -51,7 +51,7 @@ export default function RowRecipe({
               key={idx}
               className='Ingredient'
             >
-              <ItemBullet
+              <BulletItem
                 name={ing.material.name}
                 imgURL={ing.material.imgURL}
                 category="materials"

@@ -4,21 +4,21 @@
 // * Other Components
 
 // * Other Imports
-import './ItemBullet.component.scss';
+import './BulletItem.component.scss';
 
 // * Component Props
-interface ItemBulletProps {
+interface BulletItemProps {
   name: string,
   imgURL: string,
   category: 'items' | 'materials';
 };
 
 // * Component
-export default function ItemBullet({ 
+export default function BulletItem({ 
   name,
   imgURL,
   category
-}: ItemBulletProps) {
+}: BulletItemProps) {
   // * Variables
 
   // * Helper Functions
@@ -26,7 +26,7 @@ export default function ItemBullet({
   // * Rendering
   return (
     <div
-      className="ItemBullet"
+      className="BulletItem"
     >
       <img
         className="image"
