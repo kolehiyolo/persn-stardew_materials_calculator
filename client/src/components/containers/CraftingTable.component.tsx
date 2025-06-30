@@ -2,7 +2,7 @@
 // import { useState } from 'react';
 
 // * Other Components
-import ItemBullet from '../containers/ItemBullet.component';
+import RecipeRow from '../containers/RecipeRow.component';
 
 // * Other Imports
 import type { Item } from '../../types';
@@ -37,43 +37,10 @@ export default function CraftingTable({
           </thead>
           <tbody>
             {constItems.map(item => (
-              <tr 
-                className="recipe"
+              <RecipeRow
                 key={item.id}
-              >
-                <td
-                  className="Item"
-                >
-                  <ItemBullet
-                    name={item.name}
-                    imgURL={item.imgURL}
-                    category="items"
-                  />
-                </td>
-                <td
-                  className="ingredients"
-                >
-                  <ul>
-                    {item.ingredients.map((ing, idx) => (
-                      <li
-                        key={idx}
-                        className='Ingredient'
-                      >
-                        <ItemBullet
-                          name={ing.material.name}
-                          imgURL={ing.material.imgURL}
-                          category="materials"
-                        />
-                        <div
-                          className="quantity"
-                        >
-                          x{ing.quantity}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </td>
-              </tr>
+                item={item}
+              />
             ))}
           </tbody>
       </table>

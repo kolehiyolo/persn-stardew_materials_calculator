@@ -10,8 +10,14 @@ own component CraftingTable
 own component ItemBullet
 break down components
 ItemBullet image stretched
+own component RecipeRow
 
 <!-- ? DOING -->
+<!-- user can input quantity to items -->
+add input to RecipeRow
+prep state prcsdItems
+handle input change with RecipeRow
+
 
 <!-- ! PAUSED -->
 
@@ -20,3 +26,4 @@ ItemBullet image stretched
 <!-- ! BUGS -->
 
 <!-- ? SANITY REFACTORING -->
+rename components to TypeName, instead of NameType
