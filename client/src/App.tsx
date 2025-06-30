@@ -16,7 +16,7 @@ export default function App() {
   // # States
   // * Constant On Mount
   // ! const [materials, setMaterials] = useState<Material[]>([]);
-  const [constItems, setConstItems] = useState<Item[]>([]);
+  // ! const [constItems, setConstItems] = useState<Item[]>([]);
 
   // * Processed Variables
   const [prcsdItems, setPrcsdItems] = useState<Item[]>([]);
@@ -70,7 +70,7 @@ export default function App() {
         );
 
         // Set collected itemsData to state
-        setConstItems(itemsData);
+        // ! setConstItems(itemsData);
         setPrcsdItems(itemsData);
       })
       .catch(err => {

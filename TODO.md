@@ -17,10 +17,10 @@ style input
 add material multiplier within RecipeRow
 prep state prcsdItems
 handle input change with RecipeRow
-
-<!-- ? DOING -->
 <!-- user can input quantity to items -->
 
+<!-- ? DOING -->
+rename components to TypeName, instead of NameType
 
 <!-- ! PAUSED -->
 
@@ -29,4 +29,3 @@ handle input change with RecipeRow
 <!-- ! BUGS -->
 
 <!-- ? SANITY REFACTORING -->
-rename components to TypeName, instead of NameType
