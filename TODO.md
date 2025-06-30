@@ -24,6 +24,11 @@ renamed ItemBullet to BulletItem
 rename components to TypeName, instead of NameType
 
 <!-- ? DOING -->
+<!-- display material breakdown -->
+create component file and setup
+build table with placeholder data
+link faux materialsData to new component
+prepare processing of materialsData
 
 <!-- ! PAUSED -->
 
