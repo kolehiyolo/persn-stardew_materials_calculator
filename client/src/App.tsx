@@ -18,6 +18,9 @@ export default function App() {
   // ! const [materials, setMaterials] = useState<Material[]>([]);
   const [constItems, setConstItems] = useState<Item[]>([]);
 
+  // * Processed Variables
+  const [prcsdItems, setPrcsdItems] = useState<Item[]>([]);
+
   // # triggerOnMount
   useEffect(() => {
     // Load both JSON files in parallel
@@ -68,11 +71,21 @@ export default function App() {
 
         // Set collected itemsData to state
         setConstItems(itemsData);
+        setPrcsdItems(itemsData);
       })
       .catch(err => {
         console.error('Failed to load mock data:', err);
       });
   }, []);
+
+  // # triggerNewPrcsdItems
+  useEffect(() =>{
+    console.log(`triggerNewPrcsdItems()`);
+    console.log(`prcsdItems = `);
+    console.log(prcsdItems);
+
+    console.log(`this is what should then trigger the processing of materials total`);
+  }, [prcsdItems]);
 
   // # Rendering
   return (
@@ -80,7 +93,8 @@ export default function App() {
       <main className="main">
         <div className="left">
           <CraftingTable
-            constItems={constItems}
+            prcsdItems={prcsdItems}
+            setPrcsdItems={setPrcsdItems}
           />
         </div>
       </main>

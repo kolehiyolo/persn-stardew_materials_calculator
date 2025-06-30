@@ -16,7 +16,8 @@
         "name": "Refined Quartz",
         "quantity": 1
       }
-    ]
+    ],
+    "quantity": 0
   },
   {
     "id": 2,
@@ -39,7 +40,8 @@
         "name": "Earth Crystal",
         "quantity": 1
       }
-    ]
+    ],
+    "quantity": 0
   },
   {
     "id": 3,
@@ -62,7 +64,8 @@
         "name": "Maple Syrup",
         "quantity": 1
       }
-    ]
+    ],
+    "quantity": 0
   },
   {
     "id": 4,
@@ -81,6 +84,7 @@
         "name": "Coal",
         "quantity": 8
       }
-    ]
+    ],
+    "quantity": 0
   }
 ]

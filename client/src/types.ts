@@ -3,6 +3,7 @@ export interface Item {
   name: string;
   imgURL: string;
   ingredients: Array<Ingredient>;
+  quantity: number;
 }
 
 export interface Material {

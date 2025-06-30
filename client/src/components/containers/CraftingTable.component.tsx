@@ -10,16 +10,28 @@ import './CraftingTable.component.scss';
 
 // * Component Props
 interface CraftingTableProps {
-  constItems: Item[],
+  prcsdItems: Item[],
+  setPrcsdItems: React.Dispatch<React.SetStateAction<Item[]>>,
 };
 
 // * Component
 export default function CraftingTable({ 
-  constItems
+  prcsdItems,
+  setPrcsdItems,
 }: CraftingTableProps) {
   // * Variables
 
   // * Helper Functions
+  function handleRecipeRowInputChange(itemID: string, itemQuantity: number): void {
+    const newPrcsdItems: Item[] = prcsdItems.map(item => {
+      if (item.id === itemID) {
+        return { ...item, quantity: itemQuantity };
+      }
+      return item;
+    });
+
+    setPrcsdItems(newPrcsdItems);
+  };
 
   // * Rendering
   return (
@@ -37,10 +49,11 @@ export default function CraftingTable({
             </tr>
           </thead>
           <tbody>
-            {constItems.map(item => (
+            {prcsdItems.map(item => (
               <RecipeRow
                 key={item.id}
                 item={item}
+                handleRecipeRowInputChange={handleRecipeRowInputChange}
               />
             ))}
           </tbody>

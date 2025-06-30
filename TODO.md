@@ -15,11 +15,11 @@ add input to RecipeRow
 add quantity header to table
 style input
 add material multiplier within RecipeRow
+prep state prcsdItems
+handle input change with RecipeRow
 
 <!-- ? DOING -->
 <!-- user can input quantity to items -->
-prep state prcsdItems
-handle input change with RecipeRow
 
 
 <!-- ! PAUSED -->

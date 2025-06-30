@@ -1,5 +1,5 @@
 // * Dependencies
-import { useState } from 'react';
+// import { useState } from 'react';
 import type { ChangeEvent } from 'react';
 
 // * Other Components
@@ -11,21 +11,21 @@ import './RecipeRow.component.scss';
 
 // * Component Props
 interface RecipeRowProps {
-  item: Item
+  item: Item,
+  handleRecipeRowInputChange: (itemID: string, itemQuantity: number) => void 
 };
 
 // * Component
 export default function RecipeRow({ 
-  item
+  item,
+  handleRecipeRowInputChange
 }: RecipeRowProps) {
   // * Variables
-  const [recipeQuantity, setRecipeQuantity] = useState<number>(0);
   
   // * Helper Functions
   function handleInputChange(e: ChangeEvent<HTMLInputElement>): void {
     const value: number = Number(e.target.value);
-    console.log(`${item.name} = ${value}`)
-    setRecipeQuantity(value);
+    handleRecipeRowInputChange(item.id, value);
   };
 
   // * Rendering
@@ -64,7 +64,7 @@ export default function RecipeRow({
               <div
                 className="quantityTotal"
               >
-                x{ing.quantity * recipeQuantity}
+                x{ing.quantity * item.quantity}
               </div>
             </li>
           ))}
@@ -78,7 +78,7 @@ export default function RecipeRow({
           onChange={handleInputChange}
           min={0}
           step={1}
-          value={recipeQuantity}
+          value={item.quantity}
         />
       </td>
     </tr>
