@@ -19,5 +19,39 @@
   .body {
     padding: 20px;
     flex-grow: 1;
+
+    table {
+      border-collapse: separate; // Important!
+      border-spacing: 12px; // Space between cells
+      margin: -12px;
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 100%;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        min-width: 100px;
+        white-space: nowrap;
+      }
+
+      th,
+      td {
+        background-color: $bg-black;
+      }
+
+      thead {
+        tr {
+          th {
+            padding: 20px;
+          }
+        }
+      }
+
+      tbody {
+
+      }
+    }
   }
 }

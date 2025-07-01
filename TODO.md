@@ -24,19 +24,18 @@ renamed ItemBullet to BulletItem
 rename components to TypeName, instead of NameType
 create component file and setup
 h1 are too big
+build table with placeholder data
 
 <!-- ? DOING -->
-<!-- ! BUGS -->
+<!-- display material breakdown -->
+link faux materialsData to new component
+own component RowMaterialsQuantities
+prepare processing of materialsData
 
 <!-- ! PAUSED -->
-<!-- display material breakdown -->
-build table with placeholder data
-link faux materialsData to new component
-prepare processing of materialsData
 
 <!-- TODOS -->
 
 <!-- ! BUGS -->
-h1 are too big
 
 <!-- ? SANITY REFACTORING -->

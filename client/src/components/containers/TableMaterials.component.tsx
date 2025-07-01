@@ -27,7 +27,40 @@ export default function TableMaterials({
         <h1 className="title">Here's what you need</h1>
       </div>
       <div className="body">
-        <p>THIS IS WHERE THE BODY GOES</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>You Need</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                className="Item"
+              >
+                Placeholder Material #1
+              </td>
+              <td
+                className="quantityYouNeed"
+              >
+                ####
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="Item"
+              >
+                Placeholder Material #1
+              </td>
+              <td
+                className="quantityYouNeed"
+              >
+                ####
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
