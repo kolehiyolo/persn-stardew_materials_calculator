@@ -4,21 +4,22 @@
 // * Other Components
 
 // * Other Imports
-// import type { Item } from '../../types';
+import type { Material } from '../../types';
 import './TableMaterials.component.scss';
 
 // * Component Props
 interface TableMaterialsProps {
-  placeholder: string,
+  prcsdMaterials: Material[]
 };
 
 // * Component
 export default function TableMaterials({ 
-  placeholder
+  prcsdMaterials
 }: TableMaterialsProps) {
   // * Variables
 
   // * Helper Functions
+  console.log(prcsdMaterials)
 
   // * Rendering
   return (

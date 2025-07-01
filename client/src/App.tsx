@@ -16,7 +16,7 @@ import './styles/App.scss';
 export default function App() {
   // # States
   // * Constant On Mount
-  // ! const [materials, setMaterials] = useState<Material[]>([]);
+  const [constMaterials, setConstMaterials] = useState<Material[]>([]);
   // ! const [constItems, setConstItems] = useState<Item[]>([]);
 
   // * Processed Variables
@@ -30,8 +30,18 @@ export default function App() {
       fetch('/data/items.json').then(res => res.json())
     ])
       .then(([fetchedMaterialsData, fetchedItemsData]: [Material[], Item[]]) => {
-        // ! Store material list
-        // ! setMaterials(materialData);
+        // Populate materials with quantity property first
+        const newPrcsdMaterialsData: Material[] = fetchedMaterialsData.map(
+          (material: Material) => {
+            return {
+              ...material,
+              quantity: 0
+            }
+          }
+        );
+
+        // Store material list
+        setConstMaterials(newPrcsdMaterialsData);
 
         // Loop through all items to convert item.ingredients[].names to full Material objects
         const itemsData: Item[] = fetchedItemsData.map(
@@ -40,7 +50,7 @@ export default function App() {
             const prcsdIngredients: Ingredient[] = item.ingredients.map(
               (ingredient: Ingredient) => {
                 // Find match, and set it to "Material Not Found" if no match
-                const matchedMaterial: Material = fetchedMaterialsData.find(
+                const matchedMaterial: Material = newPrcsdMaterialsData.find(
                   (mat: Material) => {
                     return mat.name === ingredient.name;
                   }
@@ -48,6 +58,7 @@ export default function App() {
                   id: '',
                   name: 'Material Not Found',
                   imgURL: 'Material Not Found',
+                  quantity: 0,
                 };
 
                 // Set item.ingredients[n] with right .material
@@ -100,7 +111,7 @@ export default function App() {
         </div>
         <div className="right">
           <TableMaterials
-            placeholder={'placeholder'}
+            prcsdMaterials={constMaterials}
           />
         </div>
       </main>

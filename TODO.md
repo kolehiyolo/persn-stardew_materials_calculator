@@ -25,10 +25,11 @@ rename components to TypeName, instead of NameType
 create component file and setup
 h1 are too big
 build table with placeholder data
+link faux materialsData to new component
 
 <!-- ? DOING -->
 <!-- display material breakdown -->
-link faux materialsData to new component
+render prcsdMaterials in TableMaterials
 own component RowMaterialsQuantities
 prepare processing of materialsData
 
@@ -39,3 +40,4 @@ prepare processing of materialsData
 <!-- ! BUGS -->
 
 <!-- ? SANITY REFACTORING -->
+add missing properties to fetchedMaterialsData and fetchedItemsData before processing
