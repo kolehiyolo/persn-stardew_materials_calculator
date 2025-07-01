@@ -26,11 +26,10 @@ create component file and setup
 h1 are too big
 build table with placeholder data
 link faux materialsData to new component
+render prcsdMaterials in TableMaterials
 
 <!-- ? DOING -->
 <!-- display material breakdown -->
-render prcsdMaterials in TableMaterials
-own component RowMaterialsQuantities
 prepare processing of materialsData
 
 <!-- ! PAUSED -->
@@ -41,3 +40,4 @@ prepare processing of materialsData
 
 <!-- ? SANITY REFACTORING -->
 add missing properties to fetchedMaterialsData and fetchedItemsData before processing
+TableCrafting body must go overflow auto when too much content

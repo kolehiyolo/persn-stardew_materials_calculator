@@ -49,7 +49,7 @@ export default function TableCrafting({
             </tr>
           </thead>
           <tbody>
-            {prcsdItems.map(item => (
+            {prcsdItems.map((item: Item) => (
               <RowRecipe
                 key={item.id}
                 item={item}

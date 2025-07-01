@@ -2,6 +2,7 @@
 // import { useState } from 'react';
 
 // * Other Components
+import BulletItem from './BulletItem.component';
 
 // * Other Imports
 import type { Material } from '../../types';
@@ -36,30 +37,26 @@ export default function TableMaterials({
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td
-                className="Item"
+            {prcsdMaterials.map((material: Material) => (
+              <tr
+                key={material.id}
               >
-                Placeholder Material #1
-              </td>
-              <td
-                className="quantityYouNeed"
-              >
-                ####
-              </td>
-            </tr>
-            <tr>
-              <td
-                className="Item"
-              >
-                Placeholder Material #1
-              </td>
-              <td
-                className="quantityYouNeed"
-              >
-                ####
-              </td>
-            </tr>
+                <td
+                  className="Item"
+                >
+                  <BulletItem
+                    name={material.name}
+                    imgURL={material.imgURL}
+                    category="materials"
+                  />
+                </td>
+                <td
+                  className="quantityYouNeed"
+                >
+                  {material.quantity}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
