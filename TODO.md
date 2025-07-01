@@ -23,10 +23,10 @@ renamed RecipeRow to RowRecipe
 renamed ItemBullet to BulletItem
 rename components to TypeName, instead of NameType
 create component file and setup
+h1 are too big
 
 <!-- ? DOING -->
 <!-- ! BUGS -->
-h1 are too big
 
 <!-- ! PAUSED -->
 <!-- display material breakdown -->
