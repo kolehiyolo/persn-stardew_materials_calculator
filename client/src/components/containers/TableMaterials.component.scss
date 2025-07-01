@@ -1,0 +1,24 @@
+@import '../../styles/utils/variables';
+
+.TableMaterials {
+  background-color: $bg-grey;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .head {
+    height: 100px;
+    padding: 20px;
+    
+    .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .body {
+    padding: 20px;
+    flex-grow: 1;
+  }
+}

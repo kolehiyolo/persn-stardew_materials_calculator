@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 // * Other Components
 import TableCrafting from './components/containers/TableCrafting.component';
+import TableMaterials from './components/containers/TableMaterials.component';
 
 // * Other Imports
 import type { Material } from './types';
@@ -95,6 +96,11 @@ export default function App() {
           <TableCrafting
             prcsdItems={prcsdItems}
             setPrcsdItems={setPrcsdItems}
+          />
+        </div>
+        <div className="right">
+          <TableMaterials
+            placeholder={'placeholder'}
           />
         </div>
       </main>

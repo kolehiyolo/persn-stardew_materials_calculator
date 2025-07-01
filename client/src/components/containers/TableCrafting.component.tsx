@@ -37,7 +37,7 @@ export default function TableCrafting({
   return (
     <div className="TableCrafting">
       <div className="head">
-        <h1 className="Title">What do you want to craft?</h1>
+        <h1 className="title">What do you want to craft?</h1>
       </div>
       <div className="body">
         <table>

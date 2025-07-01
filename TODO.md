@@ -22,18 +22,21 @@ renamed CraftingTable to TableCrafting
 renamed RecipeRow to RowRecipe
 renamed ItemBullet to BulletItem
 rename components to TypeName, instead of NameType
+create component file and setup
 
 <!-- ? DOING -->
+<!-- ! BUGS -->
+h1 are too big
+
+<!-- ! PAUSED -->
 <!-- display material breakdown -->
-create component file and setup
 build table with placeholder data
 link faux materialsData to new component
 prepare processing of materialsData
 
-<!-- ! PAUSED -->
-
 <!-- TODOS -->
 
 <!-- ! BUGS -->
+h1 are too big
 
 <!-- ? SANITY REFACTORING -->

@@ -1,4 +1,4 @@
-prepped new feature plan
-1. aight new feature in the horizon
-2. i just created a quick overview of the major steps
-3. now we run
+create component file and setup
+1. created TableMaterials .tsx and .scss
+2. styling and rendering is pretty much on point now, just need to fill in the body
+3. h1 is too big tho, so need to sorta veer away for now and focus on fixing that
